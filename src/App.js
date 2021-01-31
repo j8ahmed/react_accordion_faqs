@@ -1,10 +1,10 @@
 import React from 'react'
-import StripeNavbar from './projects/stripe_navbar_imitation'
+import J8ahmed from './projects/j8ahmed_portfolio'
 
 const App = () => {
     return (
     <React.Fragment> 
-        <StripeNavbar />
+        <J8ahmed />
     </React.Fragment>)
 }
 
