@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { loadMenu } from '../assests/animations';
-const Categories = ({categories, focusCat, changeCat}) => {
+
+const Categories = ({categories, current_category, changeCat}) => {
     const sortedCat = useState(categories.sort());
     const init = useRef(false);
 
-    
     useEffect(() => {
         if(init.current) loadMenu();
-    }, [focusCat])
+    }, [current_category])
     
     useEffect(() => {
         init.current = true;
@@ -16,10 +16,8 @@ const Categories = ({categories, focusCat, changeCat}) => {
     return (
         <nav>
             <ul className="category_list">
-                <li 
-                className="category_item"
-                onClick={()=>{changeCat('')}}
-                >All</li>
+                <li className="category_item" onClick={()=>{changeCat('')}}>All</li>
+
                 {sortedCat[0].map((cat, i) => {
                     return (
                         <li 

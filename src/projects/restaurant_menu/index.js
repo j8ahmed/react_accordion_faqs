@@ -39,7 +39,7 @@ const Index = () => {
             <main className='app_container'>
                 <Categories 
                 categories={catList} 
-                focusCat={category}
+                current_category={category}
                 changeCat={setCategory} />
                 <div className='menu'>
                     {catItems.map((item) => {

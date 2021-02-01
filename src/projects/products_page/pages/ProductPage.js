@@ -12,10 +12,11 @@ const ProductPage = () => {
 
     useEffect(() => {
         load_page()
-        if(current_product.id !== id) {
-            load_single_product(id)
-        }
-    }, [current_product.id, load_single_product, id])
+    }, [])
+    
+    useEffect(() => {
+        load_single_product(id)
+    }, [load_single_product, id])
 
     useEffect(() => {
         if(!isLoading) load_product_page()
