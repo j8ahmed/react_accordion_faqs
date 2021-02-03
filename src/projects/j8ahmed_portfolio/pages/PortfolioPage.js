@@ -3,6 +3,7 @@ import React, { useState, useEffect, useMemo, useCallback } from 'react'
 import { data } from '../assets/page_data/portfolio/data'
 import Navigation from '../components/portfolio/Portfolio_navigation'
 import Project from '../components/portfolio/Portfolio_project'
+import { load_page_anim } from '../assets/animations'
 const {log} = console
 
 const Portfolio_page = () => {
@@ -51,11 +52,11 @@ const Portfolio_page = () => {
     },[] )
 
     useEffect(() => {
-        
+        load_page_anim()
     }, [])
 
     return (
-        <main className="">
+        <main className="site_content_container">
             <Navigation 
                 category_list={category_list}
                 get_filtered_projects={filter_projects}

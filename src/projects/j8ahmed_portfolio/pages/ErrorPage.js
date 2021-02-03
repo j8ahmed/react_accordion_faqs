@@ -1,11 +1,12 @@
 import React from 'react'
+import "../css/index.css"
 
 const Error_page = () => {
     return (
-        <div>
+        <main className="site_content_container">
             <h1>404 Error</h1>
             <h2>Page not found.</h2>
-        </div>
+        </main>
     )
 }
 

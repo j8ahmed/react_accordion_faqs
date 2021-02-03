@@ -26,6 +26,7 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
+                    <div className="footer_copyright">Copyright &copy; 2021 J8ahmed. All rights reserved.</div>
                     
                 </div>
             </div>

@@ -1,9 +1,15 @@
 import "../css/contact.css"
-import React from 'react'
+import React, {useEffect} from 'react'
+import { load_page_anim } from '../assets/animations'
 
 const Contact_page = () => {
+
+    useEffect(() => {
+        load_page_anim()
+    }, [])
+    
     return (
-        <main className="">
+        <main className="site_content_container">
             <canvas id="rain-canvas"></canvas>
             <div id="contents">
 
