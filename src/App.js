@@ -1,10 +1,10 @@
 import React from 'react'
-import J8ahmed from './projects/j8ahmed_portfolio'
+import AccordionFaqs from './accordian_faqs'
 
 const App = () => {
     return (
     <React.Fragment> 
-        <J8ahmed />
+        <AccordionFaqs />
     </React.Fragment>)
 }
 
